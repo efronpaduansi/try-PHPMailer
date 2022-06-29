@@ -21,7 +21,7 @@ if(isset($_POST['register']))
         $nama_pengirim = 'PT.Frondev';
         $email_penerima = $_POST['email'];
         $subjek = 'Registrasi User Baru PT.Frondev';
-        $pesan = 'Halo, ' .$fullname .'anda berhasil registrasi di PT.Frondev';
+        $pesan = 'Halo, ' .$fullname .' anda berhasil registrasi di PT.Frondev dengan email address '. $email . ' & Password ' . $password  ;
 
         $mail = new PHPMailer();
         $mail->isSMTP();
